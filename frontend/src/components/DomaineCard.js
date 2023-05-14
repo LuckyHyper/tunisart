@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import right_arrow from '../assets/right-arrow.png';
+import qte from '../assets/qte.png';
 
 function DomaineCard(props) {
   return (
@@ -13,15 +13,22 @@ function DomaineCard(props) {
         style={{ height: '15rem', width: '15rem', borderRadius: '0.7rem' }}
       />
       <h3 className="card-title">{props.title}</h3>
-      <div style={{ display: 'flex', width: '100%' }}>
-        <Link
-          to="/domain"
-          state={{ title: props.title }}
-          className="card-link"
-          style={{ margin: '0', display: 'absolute', width: '100%', left: '0' }}
-        >
-          qte
-        </Link>
+      <div
+        style={{
+          display: 'flex',
+          width: '100%',
+          padding: '0.5rem 2.5rem',
+          alignItems: 'center',
+        }}
+      >
+        <button className="btn btn-light" style={{ fontSize: '30px' }}>
+          -
+        </button>
+        <h4 style={{ margin: '0' }}>0</h4>
+        <button className="btn btn-light" style={{ fontSize: '30px' }}>
+          +
+        </button>
+
         <Link
           to="*"
           className="btn btn-dark"

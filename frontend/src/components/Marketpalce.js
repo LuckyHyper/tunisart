@@ -15,11 +15,19 @@ function Marketpalce() {
       <div className="marketplace">
         <div className="marketplace-head">
           <div style={{ position: 'absolute', left: '0', marginLeft: '5%' }}>
-            <h4>tunisia</h4>
+            <h4
+              style={{
+                fontFamily: 'Instrument Sans, sans-serif;',
+                fontSize: '2.5rem',
+                marginLeft: '0.5rem',
+              }}
+            >
+              Tunisia
+            </h4>
           </div>
           <button
             style={{ position: 'absolute', right: '0', marginRight: '5%' }}
-            className="btn btn-warning"
+            className="btn btn-dark"
             onClick={() => setPopup(true)}
           >
             Add Article
