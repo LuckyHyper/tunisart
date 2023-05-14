@@ -1,0 +1,256 @@
+#admin {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.admin-page {
+    display: flex;
+    height: 100%;
+}
+#sidebar {
+    min-height: 100vh;
+    height: 100%;
+    width: 20rem;
+    background-color: #393E46;
+    box-shadow: 10px 0px 25px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+#sidebar > .left-arrow {
+    position :absolute;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+}
+#sidebar > .admin-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0; 
+}
+#sidebar > ul {
+    padding: 1rem 0 ;
+}
+.admin-pages {
+    margin: 0.5rem;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+.admin-pages:hover {
+    text-decoration: none;
+}
+.admin-pages:hover {
+    border-left: 5px solid #00ADB5;
+    background-color: rgba(0, 173, 181,0.1);
+}
+.admin-pages:focus {
+    border-left: 5px solid #00ADB5;
+    background-color: rgba(0, 173, 181,0.1);
+}
+.admin-pages > h4 {
+    margin: 1.5rem;
+    color: #EEEEEE;
+    font-size: 22px;
+}
+.admin-pages > h4:hover {
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+#admin > p {
+    margin: 0;
+    padding: 1rem;
+    }
+td > div {
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+/* //////// Default button css removed \\\\\\\\\\\ */
+button {
+    border: none;
+    background-color: #ffffff;
+}
+button:focus {
+     outline : none
+}
+/*  /////////// Statistics \\\\\\\\\\\ */
+
+.statistics-page {
+    height: 100%;
+}
+
+/*  /////////// Condidates \\\\\\\\\\\ */
+
+.page-layout {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    padding: 5rem 7%;  
+}
+.search-input {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+table th,td {
+    text-align: center; 
+ }
+ 
+button.page-link {
+    color: black;
+}
+button.page-link:focus {
+    box-shadow: 0 0 5px #d6d6d6;
+}
+
+/*  /////////// Admin Poste \\\\\\\\\\\ */
+
+#companys_logo {
+    border-radius: 20%;
+}
+
+.table-text
+{
+    padding: 1.4rem;
+    margin: 0;
+    z-index: 2;
+}
+
+#poste-table > tbody > tr{
+    z-index: 1;
+}
+#poste-table > tbody > tr > td {
+    padding: 0rem;
+    align-items: center;
+}
+#poste-table > tbody > tr > td > img {
+    margin:0.5rem
+}
+/* ============ Admin Poste List ============ */
+
+.candidate-list {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+}
+.list-box {
+    position:fixed;
+    top: 8%;
+    left:35%;
+    width: 45rem;
+    height: 40rem;
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    padding: 3rem 4rem;
+}
+.my-custom-scrollbar {
+    display: block;
+    position: relative;
+    height: 28rem;
+    overflow: auto;
+    }
+
+/* ///////////// Admin Poste Form \\\\\\\\\\\\\ */
+.admin-add-poste {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .poste-admin-box {
+    height: calc(100% - 4rem);
+    width: 40%;
+    background-color: #ffffff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+    border-radius: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    display: grid;
+    position: relative;
+    overflow-y: auto;
+    overscroll-behavior-inline: contain;
+  }
+.form-input  {
+    width:10rem;
+    border-radius: 5px;
+}
+#job-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#job-description >h3{
+    width: 100%;
+}
+#poste-description {
+    width: 95%;
+    height: 10rem;
+}
+#logo-picture {
+    position: relative;
+}
+#logo-picture > input {
+    position: relative;
+    z-index: 10;
+    opacity: 0;
+    height: 2.35rem;
+
+}
+#logo-picture > img {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    margin-top: 0px;
+    margin-right: -17.5px;
+    opacity: 1;
+    z-index: 9;
+}
+
+/* ========== Admin Domains =========== */
+
+.domains-admin{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    padding: 10rem 7%;  
+
+}
+.domains-box {
+    width: 30rem;
+    height: 28rem;
+    box-shadow: 0 0 20px #393E46;
+    padding: 4%;
+    border-radius: 1rem;
+}
+.domain-row {
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    align-items: center;
+}
+.domains-container {
+    height: 15rem;
+    overflow-y:scroll;
+    overscroll-behavior-inline: contain;
+    margin-top: 1rem;
+}
